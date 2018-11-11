@@ -1,0 +1,91 @@
+/* Clase para el bloque inicial */
+*{
+    margin: 0px;
+    padding: 0px
+}
+.inicial{
+    width: 100%;
+    overflow: hidden
+}
+.inicial>div:nth-child(1){
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+.inicial>div:nth-last-child(1){
+    display: flex;
+    justify-content: center;
+}
+#content-img-ed{
+    position:relative;
+}
+#content-img-ed>div{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#content-img-ed img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover
+}
+#content-img-ed h2{
+    position: absolute;
+    max-width: 500px;
+    background-color: rgb(64, 44, 150,.5);
+    padding: 10px;
+    color: white
+}
+#content-img-ed .parrafo{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end
+}
+#content-img-ed .parrafo p{
+    color: white;
+    background-color:rgba(204,32,40,.5);
+    width: 100%;
+    margin: 5px;
+    padding:5px;
+    font-size:20px;
+    text-align: center
+}
+.lejos{
+    margin-left: -3000px;
+}
+.cerca{
+    margin-left: 0px;
+    transition: .4s margin linear
+}
+.icon-mov-ed{
+    width: 30px;height: 30px;border-radius: 100%;background-color: black;
+    margin: 3px;
+    cursor: pointer
+}
+.img-comandos-ed img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer
+}
+.img-comandos-ed{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index: 100
+}
+.rotar-ed{
+    transform:rotateZ(180deg)
+}
+.titulo-ed{
+}
+.titulo-ed h2{
+}

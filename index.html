@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="img-comandos-ed"><img  onclick="menos()"src="http://cdn2.hubspot.net/hub/375363/file-2234927864-png/success-previous-button.png?t=1440187717773"><img class="rotar-ed" onclick="mas()" src="http://cdn2.hubspot.net/hub/375363/file-2234927864-png/success-previous-button.png?t=1440187717773">
+    </div>
+    <div id="slider"></div>
+    <script src="./js/index.js"></script>
+    <script>
+    var arrLink = [
+        {
+            imagen:'https://www.webdelprofe.com//wp-content/uploads/2016/10/IMAGENES-DE-AUTOS.png',
+            title:'Carros de alta gama',
+            cuerpo:'Lo supremo, lo sublime, lo más exclusivo, la máxima expresión de una hecho se traduce en su valor monetario. La industria automotriz se emparenta a hechos, cosas, consignas que se engloban un el espectro multifacético de los autos, los elementos constructores de este todo.'
+        },
+        {
+            imagen:'https://images.eltiempo.digital/files/article_main/uploads/2017/10/20/59ea9701455e0.jpeg',
+            title:'Carros de alta gama',
+            cuerpo:'Lo supremo, lo sublime, lo más exclusivo, la máxima expresión de una hecho se traduce en su valor monetario. La industria automotriz se emparenta a hechos, cosas, consignas que se engloban un el espectro multifacético de los autos, los elementos constructores de este todo.'
+        },
+        {
+            imagen:'https://admin.kienyke.com/wp-content/uploads/2018/06/koenigsegg-one.png',
+            title:'Carros de alta gama',
+            cuerpo:'Lo supremo, lo sublime, lo más exclusivo, la máxima expresión de una hecho se traduce en su valor monetario. La industria automotriz se emparenta a hechos, cosas, consignas que se engloban un el espectro multifacético de los autos, los elementos constructores de este todo.'
+        },
+        {
+            imagen:'http://4.bp.blogspot.com/-_18AElD7MMo/UofarY9HYBI/AAAAAAAACIs/DT89R-NObB0/s1600/imagenes+en+HD+(25).jpg',
+            title:'Carros de alta gama',
+            cuerpo:'Lo supremo, lo sublime, lo más exclusivo, la máxima expresión de una hecho se traduce en su valor monetario. La industria automotriz se emparenta a hechos, cosas, consignas que se engloban un el espectro multifacético de los autos, los elementos constructores de este todo.'
+        }
+    ]
+    var clase = new Dlider('#slider',arrLink)
+    function cambio(index){
+        clase.cambio(index)
+    }
+    function mas(){
+        clase.aumentar()
+    }
+    function menos(){
+        clase.disminuir()
+    }
+    </script>
+</body>
+</html>
